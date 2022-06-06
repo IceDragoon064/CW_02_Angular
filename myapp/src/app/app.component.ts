@@ -1,14 +1,20 @@
 import { Component } from '@angular/core';
-import { PhonePipe } from './app.phonePipe';
+
 
 @Component({
   selector: 'app-root',
-  template: `<p>{{number|phonePipe}}</p>`,
+  template: `<h1>This is the header</h1>
+  <nav>
+  <a routerLink="/page-a" routerLinkActive="active">A</a> |
+  <a routerLink="/page-b" routerLinkActive="active">B</a>
+  </nav>
+  <!-- Where router should display a view -->
+  <router-outlet></router-outlet>`,
   styleUrls: ['./app.component.css'],
   providers: []
 })
 export class AppComponent {
-  number = "1234567890"
+
 
   constructor(){
 

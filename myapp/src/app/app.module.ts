@@ -9,16 +9,26 @@ import { SecondComponent } from './directives/second/second.component';
 import { ThirdComponent } from './directives/third/third.component';
 import { PhonePipe } from './app.phonePipe';
 
+import { PageDefault } from './app.pagedefault';
+import { PageAComponent } from './app.page-a';
+import { PageBComponent } from './app.page-b';
+import { routing } from './directives/app.routing';
+
 @NgModule({
   declarations: [
     AppComponent,
     SecondComponent,
     ThirdComponent,
     FahrenheitPipe,
-    PhonePipe
+    PhonePipe,
+    PageDefault,
+    PageAComponent,
+    PageBComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
