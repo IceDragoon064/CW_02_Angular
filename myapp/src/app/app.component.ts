@@ -1,21 +1,20 @@
 import { Component } from '@angular/core';
-import { MyDataService } from './myDataService';
+import { ConversionCtoF } from './ConversionCtoF';
 
 @Component({
   selector: 'app-root',
-  template: `<h1>Hello world! {{title}}</h1><ul>{{myname}}</ul>`,
+  template: `<h1>Hello world! {{title}}</h1><ul>{{f}}</ul>`,
   styleUrls: ['./app.component.css'],
-  providers: [MyDataService]
+  providers: [ConversionCtoF]
 })
 export class AppComponent {
   title = 'This is Angular!';
 
-  myname: string;
-
+  f: number;
   // Create instance of 'MyDataService' right in the constructor
   // header.
-  constructor(myDataService: MyDataService) {
+  constructor(conversionCtoF: ConversionCtoF) {
   // Use service to call getNames() method.
-  this.myname = myDataService.getmyNames();
+  this.f = conversionCtoF.getConversion();
   }
 }
