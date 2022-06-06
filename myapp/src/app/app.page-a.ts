@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
 @Component({
-  template: `This is page A.`
+  template: `./pageA.html`
 })
 export class PageAComponent { }
