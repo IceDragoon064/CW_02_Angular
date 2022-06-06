@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { FahrenheitPipe } from './app.fahrenheitPipe';
 import { SecondComponent } from './directives/second/second.component';
 import { ThirdComponent } from './directives/third/third.component';
+import { PhonePipe } from './app.phonePipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     SecondComponent,
     ThirdComponent,
-    FahrenheitPipe
+    FahrenheitPipe,
+    PhonePipe
   ],
   imports: [
     BrowserModule

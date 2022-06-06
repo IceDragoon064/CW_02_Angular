@@ -1,17 +1,17 @@
 import { Component } from '@angular/core';
-import { FahrenheitPipe } from './app.fahrenheitPipe';
+import { PhonePipe } from './app.phonePipe';
 
 @Component({
   selector: 'app-root',
-  template: `<p>{{celsius | fahrenheitPipe }}</p>`,
+  template: `<p>{{number|phonePipe}}</p>`,
   styleUrls: ['./app.component.css'],
   providers: []
 })
 export class AppComponent {
-  celsius: number;
+  number = "1234567890"
 
   constructor(){
-    this.celsius = 33;
+
   }
 
 }
