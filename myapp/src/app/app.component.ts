@@ -17,7 +17,9 @@ export class AppComponent {
 
 
   constructor(){
-
+    // Declare constant.
+    let str = "This is where the class is initialized.";
+    console.log(str);
   }
 
 }
