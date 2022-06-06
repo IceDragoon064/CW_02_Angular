@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-second',
-  templateUrl: './second.component.html',
+  template: '<h3>This is the second directive!</h3>',
   styleUrls: ['./second.component.css']
 })
 export class SecondComponent implements OnInit {

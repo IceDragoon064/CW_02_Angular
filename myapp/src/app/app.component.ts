@@ -1,8 +1,8 @@
-import { Component, Directive } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  template: '<h1>Hello world! {{title}}</h1> <app-second></app-second>',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
