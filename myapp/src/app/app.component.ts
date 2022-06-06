@@ -1,15 +1,17 @@
 import { Component } from '@angular/core';
-
+import { FahrenheitPipe } from './app.fahrenheitPipe';
 
 @Component({
   selector: 'app-root',
-  template: `{{price | currency:'USD':true}}<br/>`,
+  template: `<p>{{celsius | fahrenheitPipe }}</p>`,
   styleUrls: ['./app.component.css'],
   providers: []
 })
 export class AppComponent {
-  title = 'This is Angular!';
+  celsius: number;
 
-  price: number = 23.23333;
+  constructor(){
+    this.celsius = 33;
+  }
 
 }
